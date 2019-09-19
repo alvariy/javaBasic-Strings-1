@@ -141,16 +141,12 @@ class StringTest {
         // TODO: Create string using StringBuilder
         // <--Start
         StringBuilder builder = new StringBuilder();
-        for (int y = 0; y < height; y++)
-        {
-                if(y==0 || y==2)
-                {
-                    builder.append("|---|\n");
-                }
-                else
-                {
-                    builder.append("|   |\n");
-                }
+        for(int y = 0; y < 3; ++y) {
+            if (y != 0 && y != 2) {
+                builder.append("|   |\n");
+            } else {
+                builder.append("|---|\n");
+            }
         }
         // --End-->
 
